@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Shippori+Mincho:wght@400;500;700&display=swap');
+
+:root {
+    /* Font Families */
+    --brand-font-family: 'Redressed', cursive;
+    --text-font-family: 'Shippori Mincho', serif;
+
+    /* Colors */
+    --page-color: #F9F1E5;
+    --section-color: #ffffff;
+    --font-color: #5B320E;
+    --brand-color: #5B320E;
+    --font-color-secondary: #666666;
+    --border-color: #5B320E;
+
+    /*Font-weight*/
+    --font-weight-lg: 900;
+    /* Font Sizes */
+    --font-size-brand: 3rem;
+    --font-size-text: 1.5rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol, ul, li {
+    display: inline-block;
+
+}
+
+a, a:hover.a:focus {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+    font-family: var(--text-font-family);
+    color: var(--font-color);
+}
+
+#bookList {
+    background: url(../image/background.png) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+#bookList .bookListHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bookList .bookListHeader .text h1 {
+    font-family: var(--brand-font-family);
+    color: var(--font-color);
+    font-size: var(--font-size-brand);
+    font-weight: var(--font-weight-lg);
+}
+
+#bookList .bookListInput {
+    padding: 50px;
+    box-shadow: -2px -20px 10px 1px rgb(91 50 14);
+    margin-top: 20px
+}
+
+#bookList .bookListInput label {
+    font-size: var(--font-size-text);
+    margin-top: 20px;
+}
+
+#bookList .bookListInput input {
+    width: 100%;
+    padding: 5px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+#bookList .bookListInput #submitBook{
+    width: 100%;
+    margin-top: 80px;
+    background: transparent;
+    color: var(--font-color);
+    font-size: var(--font-size-text);
+    border: none;
+    box-shadow: -20px -2px 30px 1px rgb(91 50 14)
+}
+#bookList .bookData{
+    box-shadow: -2px 10px 17px 1px rgba(91,50,14,1);
+    color: var(--font-color)!important;
+
+
+}
