@@ -5,9 +5,7 @@ const submit = document.querySelector('#submitBook')
 const bookListData = document.querySelector('#bookView')
 submit.addEventListener('click', (e) => {
     e.preventDefault()
-    if (name.value === '' && author.value === '' && year.value === '') {
-        alert('Please Fill All Input')
-    } else {
+    if (name.value !== "" && author.value !== "" && year.value !== "") {
         // create a new table row  //
         const newTableRow = document.createElement('tr')
         // create a new name data //
@@ -24,5 +22,8 @@ submit.addEventListener('click', (e) => {
         newTableRow.appendChild(newYear)
 
         bookListData.appendChild(newTableRow)
+       
+    } else {
+         alert('Please Fill All Input')
     }
 })
